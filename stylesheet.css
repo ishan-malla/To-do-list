@@ -105,7 +105,7 @@ h2:hover {
   cursor: pointer;
 }
 .active-list {
-  width: min-content;
+  width: max-content;
   font-weight: bolder;
   list-style: disc;
   border-bottom: 1px white solid;

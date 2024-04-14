@@ -33,7 +33,7 @@ newTaskForm.addEventListener("submit", (e) => {
   const taskName = newTaskInput.value;
   if (taskName == null || taskName === "") return;
   const tasks = createTask(taskName);
-  newTaskForm.value = null;
+  newTaskInput.value = null;
   const selectedlist = lists.find((list) => list.id === selectedListId);
   selectedlist.task.push(tasks);
   saveAndRender();
